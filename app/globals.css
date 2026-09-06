@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --night: #120f0c;
+  --night-raised: #1c1814;
+  --stone: #f3ebe0;
+  --stone-dim: #c4b5a0;
+  --khaki: #c4a574;
+  --ink: #120f0c;
+  --focus: #e8d4b0;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@theme inline {
+  --color-night: var(--night);
+  --color-night-raised: var(--night-raised);
+  --color-stone: var(--stone);
+  --color-stone-dim: var(--stone-dim);
+  --color-khaki: var(--khaki);
+  --color-ink: var(--ink);
+  --color-focus: var(--focus);
+  --font-sans: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display), Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--night);
+  color: var(--stone);
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+:focus-visible {
+  outline: 3px solid var(--night);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--stone);
+}
+
+@keyframes settle {
+  from {
+    transform: scale(1.05) translateY(10px);
+    opacity: 0.72;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.photo-settle {
+  animation: settle 1.05s var(--ease-out) both;
+}
+
+.cta-migajas {
+  transition:
+    transform 140ms var(--ease-out),
+    box-shadow 140ms var(--ease-out),
+    background-color 140ms ease;
+}
+
+.cta-migajas:hover {
+  transform: translateY(-1px);
+}
+
+.cta-migajas:active {
+  transform: scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-settle,
+  .cta-migajas,
+  .cta-migajas:hover,
+  .cta-migajas:active {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+}
