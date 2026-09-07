@@ -8,4 +8,4 @@ npm run dev
 
 Abre [http://localhost:3002](http://localhost:3002). El 3000 suele ser Meant To.
 
-Canonical: `NEXT_PUBLIC_SITE_URL` (por defecto `https://hyeon.vercel.app` hasta que exista el slug real).
+Canonical: `NEXT_PUBLIC_SITE_URL`. En Vercel, si falta, se usa la URL del propio despliegue. No dejes la variable vacía en el dashboard.
