@@ -17,6 +17,24 @@ typography:
     fontWeight: 560
     lineHeight: 0.95
     letterSpacing: "-0.03em"
+  section:
+    fontFamily: "Bricolage Grotesque, Arial, sans-serif"
+    fontSize: "2rem"
+    fontWeight: 560
+    lineHeight: 1.05
+    letterSpacing: "-0.02em"
+  product:
+    fontFamily: "Bricolage Grotesque, Arial, sans-serif"
+    fontSize: "1.5rem"
+    fontWeight: 560
+    lineHeight: 1.15
+    letterSpacing: "-0.02em"
+  lead:
+    fontFamily: "Atkinson Hyperlegible, Arial, sans-serif"
+    fontSize: "1.25rem"
+    fontWeight: 400
+    lineHeight: 1.35
+    letterSpacing: "0"
   body:
     fontFamily: "Atkinson Hyperlegible, Arial, sans-serif"
     fontSize: "1.125rem"
@@ -61,13 +79,13 @@ Night (`#120f0c`) is the page. Stone (`#f3ebe0`) is type and the learning-case f
 
 ## Typography
 
-Display is Bricolage Grotesque for the name only. Body and UI are Atkinson Hyperlegible — the accessibility claim is in the type, not in a badge. One kicker on the page (“Ahora”), not an eyebrow on every block.
+Bricolage Grotesque is for named things: the hero name (`display`), every section title at the same `section` size (Ahora, El mismo hilo, el caso de Sí Quiero, Cómo trabajo, Escríbeme), and product names. Atkinson Hyperlegible is body, lead, nav, button, and contact links. Kickers are domain labels (Vínculos, Vivienda), not section titles. Escríbeme matches the other h2s; the email and LinkedIn stay at `lead` size, not display.
 
 ## Layout
 
-Mobile first. Measure ~38–42rem. Nav is name | Escribir. Hero stacks photo then name then line. Ahora is a full-bleed khaki band. “El mismo hilo” uses editorial rows, not a card grid. The Sí Quiero learning case changes the pace with a stone field and a three-part validation summary. “Cómo trabajo” returns to the night surface. Cierre is the email at readable size.
+Mobile first. Measure ~38–42rem. Nav is name | Escribir. Hero stacks photo then name then line. Ahora is a full-bleed khaki band. From `md`, most sections split on the same axis as the hero (~28rem rail | body): kicker or title under the print, reading column aligned with the name. “El mismo hilo” uses editorial rows with hairline rules, not a card grid. The Sí Quiero learning case changes the pace with a stone field and a three-part validation summary before the story. “Cómo trabajo” is three numbered principles (the method, not page chrome). Cierre leads with one spoken line, then the email and LinkedIn as text links at lead size.
 
-From `md`, hero becomes photo | text, still top-aligned, photo never a circle.
+From `md`, hero becomes photo | text, still top-aligned, photo never a circle. The print still hangs into the khaki band.
 
 ## Elevation & Depth
 
@@ -79,7 +97,7 @@ Radius 2px. Buttons are rectangular, not pills. The photo is square.
 
 ## Components
 
-One button: Entrar en Migajas. Email is an underlined text link. Active projects use editorial rows with a domain label, linked name, and one concrete outcome. Sí Quiero has no CTA: its result is the decision, not a product to enter.
+One button: Entrar en Migajas. Email and LinkedIn are underlined text links, not twin buttons. Active projects use editorial rows with a domain label, linked name, and one concrete outcome. Sí Quiero has no CTA: its result is the decision, not a product to enter.
 
 ## Do's and Don'ts
 

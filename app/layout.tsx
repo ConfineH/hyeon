@@ -58,6 +58,7 @@ const personJsonLd = {
   jobTitle: site.jobTitle,
   description: site.description,
   image: `${site.url}${site.photo}`,
+  sameAs: [site.links.linkedin],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

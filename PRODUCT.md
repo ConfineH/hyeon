@@ -24,7 +24,7 @@ The products share one belief: useful information should be within reach of the 
 
 ## Operating Context
 
-Static Next.js, deployed as its own Vercel project. Domain is `*.vercel.app` until a custom domain exists. No CMS, auth, Supabase, or Neon. LinkedIn and GitHub stay off until he supplies them.
+Static Next.js, deployed as its own Vercel project. Domain is `*.vercel.app` until a custom domain exists. No CMS, auth, Supabase, or Neon. LinkedIn is `https://www.linkedin.com/in/joseahyeon/` as a text link in the close. GitHub stays off until he supplies it.
 
 ## Constraints
 
@@ -45,7 +45,7 @@ First person. Short sentences. Concrete. No “impulsamos”, no “soluciones�
 
 - Name in the nav is the name, not a studio mark.
 - Primary CTA label names Migajas.
-- Secondary CTA is a mailto text link.
+- Secondary contact is a mailto text link, then LinkedIn as another text link.
 
 ## Accessibility
 
@@ -53,4 +53,4 @@ Body type is Atkinson Hyperlegible on purpose: the hero line is about products y
 
 ## Open
 
-Custom domain. LinkedIn / GitHub. Whether Fachada should move off the `fachada-tau` Vercel slug.
+Custom domain. GitHub. Whether Fachada should move off the `fachada-tau` Vercel slug.

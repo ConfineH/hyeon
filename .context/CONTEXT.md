@@ -1,7 +1,8 @@
 # Contracts
 
-- `lib/site.ts` is the only place for URL, email, and photo path.
+- `lib/site.ts` is the only place for URL, email, photo path, and LinkedIn.
 - `NEXT_PUBLIC_SITE_URL` overrides the canonical origin for metadata, OG, JSON-LD, sitemap, robots. Default: `https://hyeon.vercel.app` until the real Vercel slug exists.
+- LinkedIn is `https://www.linkedin.com/in/joseahyeon/`, a text link in the close. GitHub stays off until supplied.
 - Fachada on this page points to `https://fachada-tau.vercel.app` because that host was live with the reviews product. `fachada.vercel.app` was a different app when checked.
 
 # Architecture

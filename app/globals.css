@@ -72,6 +72,7 @@ body {
 
 .cta-migajas:hover {
   transform: translateY(-1px);
+  background-color: #000000;
 }
 
 .cta-migajas:active {

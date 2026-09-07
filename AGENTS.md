@@ -12,8 +12,9 @@ Read `PRODUCT.md` for facts. Read `DESIGN.md` for the visual world. Copy lives i
 - One route. Nav is the name + Escribir (`#escribir`). No extra pages.
 - Primary CTA is a single button to Migajas (`https://migajas.vercel.app`). Confirm that URL before changing it.
 - Email is `joseahyeon@gmail.com`, text link, not a twin button.
+- LinkedIn is `https://www.linkedin.com/in/joseahyeon/`, text link in the close, not a nav item or a second button.
 - Portrait is only `public/jose-antonio-hyeon.jpg` (cap and glasses).
-- No LinkedIn/GitHub until he gives them.
+- No GitHub until he gives it.
 - No auth, CMS, Supabase, Neon.
 - `output: "export"` stays on. This deploys as its own Vercel project.
 
