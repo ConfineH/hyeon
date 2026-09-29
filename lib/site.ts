@@ -33,7 +33,7 @@ export const site = {
   links: {
     migajas: "https://migajas.vercel.app",
     meantTo: "https://www.mnto.app",
-    fachada: "https://fachada-tau.vercel.app",
+    fachada: "https://www.fachada.app",
     siQuiero: "https://siquiero.vercel.app",
     linkedin: "https://www.linkedin.com/in/joseahyeon/",
   },

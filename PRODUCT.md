@@ -33,7 +33,7 @@ Static Next.js, deployed as its own Vercel project. Domain is `*.vercel.app` unt
 - Hero photo is only `public/jose-antonio-hyeon.jpg` (cap and glasses). No blazer headshot, no café photo.
 - Do not invent social profiles, metrics, testimonials, or growth stories.
 - Sí Quiero (2026) is a learning case: discontinued after customer discovery. Do not present it as a success. Problem was real; market scale and distribution economics were not. No live CTA.
-- Fachada public URL confirmed live as `https://fachada-tau.vercel.app` (`fachada.vercel.app` is a different product).
+- Fachada public URL confirmed live as `https://www.fachada.app` (`fachada.vercel.app` is a different product).
 - Migajas public URL confirmed live as `https://migajas.vercel.app`.
 - Meant To public URLs: `https://www.mnto.app` / `https://app.mnto.app`. On this page it is listed, not heroed.
 
@@ -53,4 +53,4 @@ Body type is Atkinson Hyperlegible on purpose: the hero line is about products y
 
 ## Open
 
-Custom domain. GitHub. Whether Fachada should move off the `fachada-tau` Vercel slug.
+Custom domain for this site. GitHub.
