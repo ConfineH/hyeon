@@ -8,7 +8,7 @@ export function Portfolio({ language }: { language: Language }) {
   const t = copy[language];
   const cv = `mailto:${site.email}?subject=${encodeURIComponent(t.cvSubject)}&body=${encodeURIComponent(t.cvBody)}`;
   const projects = [
-    { name: "Migajas", category: t.education, image: "/projects/migajas.jpg", alt: t.migajasAlt, caption: t.migajasCaption, description: t.migajas, built: t.migajasBuilt, decision: t.migajasDecision, detail: t.migajasDetail, url: site.links.migajas, width: 760, height: 570 },
+    { name: "Migajas", category: t.education, image: "/projects/migajas-exercise.jpg", alt: t.migajasAlt, caption: t.migajasCaption, description: t.migajas, built: t.migajasBuilt, decision: t.migajasDecision, detail: t.migajasDetail, url: site.links.migajas, width: 780, height: 600 },
     { name: "Meant To", category: t.relationships, image: "/projects/meant-to.jpg", alt: t.meantAlt, caption: t.meantCaption, description: t.meant, built: t.meantBuilt, decision: t.meantDecision, detail: t.meantDetail, url: site.links.meantTo, width: 1170, height: 760 },
   ];
   return (
@@ -37,9 +37,7 @@ export function Portfolio({ language }: { language: Language }) {
               <a className="button button-secondary" href={cv}>{t.cv}<Arrow /></a>
             </div>
           </div>
-          <ol className="method" aria-label={language === "es" ? "Mi enfoque" : "My approach"}>
-            {t.method.map((step, index) => <li key={step}><span aria-hidden="true">0{index + 1}</span>{step}</li>)}
-          </ol>
+          <figure className="hero-portrait"><Image src="/jose-hyeon-portrait.jpg" alt="José Antonio Hyeon" width={800} height={800} sizes="(max-width: 700px) 180px, 320px" priority /></figure>
         </section>
         <section id="proyectos" className="light-section section" aria-labelledby="projects-title">
           <div className="wrap">
@@ -74,8 +72,8 @@ export function Portfolio({ language }: { language: Language }) {
         <section id="trayectoria" className="light-section section" aria-labelledby="experience-title">
           <div className="wrap">
             <h2 id="experience-title">{t.background}</h2>
-            <div className="experience-row"><h3>NielsenIQ</h3><p className="experience-role">Client Solutions Architect</p><p>{t.niq}</p></div>
-            <div className="experience-row"><h3>Deloitte</h3><p className="experience-role">{t.deloitteRole}</p><p>{t.deloitte}</p></div>
+            <div className="experience-row"><h3 className="company"><Image src="/companies/niq.svg" alt="NielsenIQ" width={100} height={43} /><span>NielsenIQ</span></h3><p className="experience-role">Client Solutions Architect</p><p>{t.niq}</p></div>
+            <div className="experience-row"><h3 className="company company-deloitte"><Image src="/companies/deloitte.svg" alt="Deloitte" width={130} height={25} /></h3><p className="experience-role">{t.deloitteRole}</p><p>{t.deloitte}</p></div>
             <div className="credentials"><p>{t.educationLine}</p><p>{t.qualification}</p></div>
           </div>
         </section>

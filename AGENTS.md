@@ -17,3 +17,7 @@ Read PRODUCT.md, DESIGN.md and TONE.md. Content is in lib/copy.ts; URL/contact f
 - No auth, CMS or additional services.
 - Test both language routes, responsive layout, links, keyboard navigation and static build.
 - Do not reintroduce the old one-route, one-button, no-cards restrictions.
+
+
+## Follow-up approved 17 November 2026
+Keep the original navy-blazer portrait beside the introduction (180px on mobile). Do not use the AI reconstruction. Use plain first-person copy, official employer marks with role context, and an actual Migajas exercise capture. Meant To retains its public landing capture until a safe demo capture is supplied; never publish private contacts, gift lists or dates.

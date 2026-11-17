@@ -29,9 +29,9 @@ export const site = {
   locale: "es_ES",
   email: "joseahyeon@gmail.com",
   url: siteOrigin(),
-  photo: "/jose-antonio-hyeon.jpg",
-  photoWidth: 598,
-  photoHeight: 598,
+  photo: "/jose-hyeon-portrait.jpg",
+  photoWidth: 800,
+  photoHeight: 800,
   links: {
     migajas: "https://migajas.vercel.app",
     meantTo: "https://www.mnto.app",

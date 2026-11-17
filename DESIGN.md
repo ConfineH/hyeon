@@ -18,3 +18,7 @@ Dark contact footer.
 Desktop content width 1120px; mobile uses 20px horizontal gutters. Cards stack below 700px. No oversized portrait, decorative illustration, invented app UI or stock analytics.
 Keep 44px minimum interactive targets, visible focus, readable contrast and reduced-motion support. Language switch is always visible; mobile navigation wraps into a second row.
 The old portrait-led composition and prohibitions on project cards are superseded by the approved mockup.
+
+
+## Follow-up approved 17 November 2026
+Keep the original navy-blazer portrait beside the introduction (180px on mobile). Do not use the AI reconstruction. Use plain first-person copy, official employer marks with role context, and an actual Migajas exercise capture. Meant To retains its public landing capture until a safe demo capture is supplied; never publish private contacts, gift lists or dates.
