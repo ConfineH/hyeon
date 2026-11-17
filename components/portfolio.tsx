@@ -24,9 +24,9 @@ export function Portfolio({ language }: { language: Language }) {
     </nav></header>
     <main id="contenido">
       <section className="hero wrap" aria-labelledby="hero-title">
-        <div className="hero-copy"><p className="eyebrow">{t.role}</p><h1 id="hero-title">{t.title}<br /><em>{t.titleEnd}</em></h1><p className="hero-intro">{t.intro}</p><div className="hero-actions"><a className="button button-primary" href="#proyectos">{t.primary}<span className="arrow" aria-hidden="true">↓</span></a><a className="text-link" href={cv}>{t.cv}<Arrow /></a></div></div>
+        <div className="hero-copy"><p className="eyebrow">{t.role}</p><h1 id="hero-title">{t.title}<em>{t.titleEnd}</em></h1><p className="hero-intro">{t.intro}</p><div className="hero-actions"><a className="button button-primary" href="#proyectos">{t.primary}<span className="arrow" aria-hidden="true">↓</span></a><a className="text-link" href={cv}>{t.cv}<Arrow /></a></div></div>
         <figure className="hero-portrait"><div className="portrait-frame"><Image src="/jose-hyeon-retouched.jpg" alt="José Antonio Hyeon" width={1000} height={1000} sizes="(max-width: 700px) 200px, (max-width: 1000px) 280px, 360px" priority /></div><figcaption>{t.portraitCaption}</figcaption></figure>
-        <div className="hero-foot" aria-hidden="true"><span>01 — {t.projects}</span><span>↓</span></div>
+        <div className="hero-foot" aria-hidden="true"><span>02 — {t.projects}</span><span>↓</span></div>
       </section>
       <section className="story-section section" aria-labelledby="story-title"><div className="wrap story-grid reveal"><div><SectionLabel number="01">{t.storyLabel}</SectionLabel><h2 id="story-title">{t.storyTitle}</h2></div><div className="story-copy"><p>{t.story}</p><p>{t.storyEnd}</p></div></div></section>
       <section id="proyectos" className="projects-section section" aria-labelledby="projects-title"><div className="wrap">
