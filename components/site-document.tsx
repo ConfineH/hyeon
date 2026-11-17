@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
-import { Atkinson_Hyperlegible, Bricolage_Grotesque } from "next/font/google";
+import { Manrope, Newsreader } from "next/font/google";
 import { site } from "@/lib/site";
 import type { Language } from "@/lib/copy";
 import "@/app/globals.css";
 
-const body = Atkinson_Hyperlegible({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-body", display: "swap" });
-const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display", display: "swap" });
+const body = Manrope({ subsets: ["latin"], variable: "--font-body", display: "swap" });
+const display = Newsreader({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 
 export function SiteDocument({ children, language }: { children: ReactNode; language: Language }) {
   const person = {

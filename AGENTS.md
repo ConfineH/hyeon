@@ -19,5 +19,6 @@ Read PRODUCT.md, DESIGN.md and TONE.md. Content is in lib/copy.ts; URL/contact f
 - Do not reintroduce the old one-route, one-button, no-cards restrictions.
 
 
-## Follow-up approved 17 November 2026
-Keep the original navy-blazer portrait beside the introduction (180px on mobile). Do not use the AI reconstruction. Use plain first-person copy, official employer marks with role context, and an actual Migajas exercise capture. Meant To retains its public landing capture until a safe demo capture is supplied; never publish private contacts, gift lists or dates.
+
+## Latest user direction
+Use the retouched navy-blazer portrait as explicitly requested. Editorial design with Newsreader and Manrope, richer bilingual narrative grounded in the Notion voice guide, confirmed story and master CV. Calm, once-only entrance animations with reduced-motion support. Current app captures remain pending user-supplied replacements. Do not publish private app data.
