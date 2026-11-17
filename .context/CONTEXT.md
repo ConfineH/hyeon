@@ -1,14 +1,16 @@
 # Contracts
-
-- `lib/site.ts` is the only place for URL, email, photo path, and LinkedIn.
-- `NEXT_PUBLIC_SITE_URL` overrides the canonical origin for metadata, OG, JSON-LD, sitemap, robots. An empty value is ignored. On Vercel the build falls back to `VERCEL_PROJECT_PRODUCTION_URL` or `VERCEL_URL`.
-- LinkedIn is `https://www.linkedin.com/in/joseahyeon/`, a text link in the close. GitHub stays off until supplied.
-- Fachada on this page points to `https://www.fachada.app`. `fachada.vercel.app` is a different app.
+lib/site.ts owns contact details and verified product links. Production origin is chosen from NEXT_PUBLIC_SITE_URL, VERCEL_PROJECT_PRODUCTION_URL, VERCEL_URL, then https://jahyeon.vercel.app.
+Fachada points to https://www.fachada.app; fachada.vercel.app is a different app.
+English is /en/, Spanish is /. Both have independent root layouts sharing SiteDocument, so html lang is correct without client-side switching.
 
 # Architecture
+Static Next.js export; next/image remains unoptimized.
+Shared server component: components/portfolio.tsx. Bilingual copy: lib/copy.ts.
+Route-group layouts delegate fonts, JSON-LD and document structure to components/site-document.tsx.
+Metadata factory: lib/metadata.ts.
+Existing portrait is retained for social metadata, not used in the hero.
+Real product captures are in public/projects. Migajas shows only the catalogue, with the account header excluded. Meant To shows the public landing page.
 
-App Router, one `app/page.tsx`. Static HTML via `output: "export"`. `next/image` is unoptimized because there is no image optimizer on static export.
-
-# Rationale
-
-Night plaza comes from the portrait (columns, cap, khaki shirt), not from a generic personal-site template. Atkinson Hyperlegible is the accessibility claim made visible. Migajas is the live product; Meant To is listed and not heroed.
+# Direction
+The owner approved a professional portfolio mockup on 17 November 2026. Supersedes previous portrait-first, Migajas-only CTA requirements.
+No supplied CV PDF: CV action is explicitly an email request.

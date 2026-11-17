@@ -1,11 +1,12 @@
-# Jose Antonio Hyeon
+# José Antonio Hyeon
 
-Sitio personal estático. Next.js App Router. Un proyecto Vercel aparte.
+Bilingual personal portfolio built with Next.js static export.
 
-```bash
-npm run dev
-```
+- `npm ci`
+- `npm run dev` (port 3002)
+- `npm run build` (static output in out/)
+- `npm run lint`
 
-Abre [http://localhost:3002](http://localhost:3002). El 3000 suele ser Meant To.
+Spanish: /. English: /en/. Copy: lib/copy.ts. Contact and product URLs: lib/site.ts.
 
-Canonical: `NEXT_PUBLIC_SITE_URL`. En Vercel, si falta, se usa la URL del propio despliegue. No dejes la variable vacía en el dashboard.
+The CV action requests the current document by email until an approved PDF is supplied.
