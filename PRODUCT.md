@@ -16,3 +16,7 @@ A personal professional portfolio for recruiters and collaborators. The purpose 
 Spanish / and English /en/. Primary action: view selected projects. Secondary: request CV. Project descriptions distinguish what was built, decisions and remaining hypotheses. Native details elements hold supporting context. Contact is email and LinkedIn.
 
 Static export on the existing Vercel project. No database, tracking or authentication added.
+
+
+## Education and earlier work
+Naked Innovations (Barcelona, hybrid, Jun-Dec 2023) and PwC Interaméricas (Santo Domingo, Dominican Republic, May-Jul 2022) are concise entries explicitly placed during university. Navarra double degree 2018-2024, Sogang exchange Sep-Dec 2023, PSPO I Apr 2026. Fachada has a full product block using a public agency profile capture; distinguish self-reported and documented experiences, not universal verification.
