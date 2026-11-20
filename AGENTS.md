@@ -6,7 +6,7 @@ A personal professional portfolio accompanying the CV. The owner approved the de
 ## Before editing
 Read PRODUCT.md, DESIGN.md and TONE.md. Content is in lib/copy.ts; URL/contact facts live in lib/site.ts.
 - Keep static Next.js export and existing Vercel hosting.
-- Spanish at / and English at /en/, with correct document languages and translated metadata.
+- Spanish at / and English at /en, with correct document languages and translated metadata. Canonical origin is https://joseahyeon.com.
 - Primary CTA: selected projects. Secondary: request CV by email until the owner supplies the current PDF.
 - Current role is Client Solutions Architect at NielsenIQ; independent projects are not employment.
 - Keep the existing verified product URLs, email and LinkedIn in lib/site.ts.

@@ -13,7 +13,7 @@ A personal professional portfolio for recruiters and collaborators. The purpose 
 - There is no supplied CV PDF in the repository. Use an honestly labelled email request until the owner provides it.
 
 ## Experience
-Spanish / and English /en/. Primary action: view selected projects. Secondary: request CV. Project descriptions distinguish what was built, decisions and remaining hypotheses. Native details elements hold supporting context. Contact is email and LinkedIn.
+Spanish / and English /en. Primary action: view selected projects. Secondary: request CV. Project descriptions distinguish what was built, decisions and remaining hypotheses. Native details elements hold supporting context. Contact is email and LinkedIn.
 
 Static export on the existing Vercel project. No database, tracking or authentication added.
 

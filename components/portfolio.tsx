@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import { site } from "@/lib/site";
 import { copy, type Language } from "@/lib/copy";
@@ -19,9 +20,9 @@ export function Portfolio({ language }: { language: Language }) {
     <Motion />
     <a className="skip-link" href="#contenido">{t.skip}</a>
     <header className="site-header"><nav className="wrap navigation" aria-label={t.navigation}>
-      <a className="wordmark" href={language === "es" ? "/" : "/en/"}>José Antonio Hyeon<span className="wordmark-dot" aria-hidden="true">.</span></a>
+      <Link className="wordmark" href={language === "es" ? "/" : "/en"} prefetch={false}>José Antonio Hyeon<span className="wordmark-dot" aria-hidden="true">.</span></Link>
       <div className="nav-links"><a href="#proyectos">{t.projects}</a><a href="#trayectoria">{t.experience}</a><a href="#escribir">{t.contact}<Arrow /></a></div>
-      <div className="language-switch" aria-label={t.language}><a href="/" hrefLang="es" lang="es" aria-label="Español" aria-current={language === "es" ? "page" : undefined}>ES</a><span aria-hidden="true">/</span><a href="/en/" hrefLang="en" lang="en" aria-label="English" aria-current={language === "en" ? "page" : undefined}>EN</a></div>
+      <div className="language-switch" aria-label={t.language}><Link href="/" hrefLang="es" lang="es" aria-label="Español" aria-current={language === "es" ? "page" : undefined} prefetch={false}>ES</Link><span aria-hidden="true">/</span><Link href="/en" hrefLang="en" lang="en" aria-label="English" aria-current={language === "en" ? "page" : undefined} prefetch={false}>EN</Link></div>
     </nav></header>
     <main id="contenido">
       <section className="hero wrap" aria-labelledby="hero-title">
@@ -33,8 +34,8 @@ export function Portfolio({ language }: { language: Language }) {
       <section id="proyectos" className="projects-section section" aria-labelledby="projects-title"><div className="wrap">
         <div className="section-heading reveal"><SectionLabel number="02">{t.projects}</SectionLabel><h2 id="projects-title">{t.selected}</h2><p>{t.selectedIntro}</p></div>
         {projects.map((project, index) => <article className={`project project-${project.theme} reveal`} key={project.name}>
-          <figure className="project-visual"><a href={project.url} className="project-image-link" aria-label={`${t.visit}: ${project.name}`}><div className="visual-heading"><span>{project.name}</span><span aria-hidden="true">0{index + 1} / 03</span></div><div className="image-mat"><Image src={project.image} alt={project.alt} width={project.width} height={project.height} sizes="(max-width: 700px) calc(100vw - 80px), 500px" className="project-image" /></div></a><figcaption>{project.caption}</figcaption></figure>
-          <div className="project-copy"><p className="eyebrow">{project.category}</p><h3>{project.headline}</h3><p className="project-body">{project.body}</p><details><summary><span>{project.decision}</span><span className="details-icon" aria-hidden="true">+</span></summary><p>{project.detail}</p></details><a className="text-link" href={project.url}>{t.visit}<Arrow /></a></div>
+          <figure className="project-visual"><a href={project.url} className="project-image-link" aria-label={`${t.visit} ${project.name}`} rel="noopener noreferrer"><div className="visual-heading"><span>{project.name}</span><span aria-hidden="true">0{index + 1} / 03</span></div><div className="image-mat"><Image src={project.image} alt={project.alt} width={project.width} height={project.height} sizes="(max-width: 700px) calc(100vw - 80px), 500px" className="project-image" /></div></a><figcaption>{project.caption}</figcaption></figure>
+          <div className="project-copy"><p className="eyebrow">{project.category}</p><h3>{project.headline}</h3><p className="project-body">{project.body}</p><details><summary><span>{project.decision}</span><span className="details-icon" aria-hidden="true">+</span></summary><p>{project.detail}</p></details><a className="text-link" href={project.url} rel="noopener noreferrer">{t.visit} {project.name}<Arrow /></a></div>
         </article>)}
       </div></section>
       <section className="case-section section" aria-labelledby="case-title"><div className="wrap case-grid reveal"><div><SectionLabel number="03">{t.stopLabel}</SectionLabel><h2 id="case-title">{t.stopTitle}</h2><div className="case-rule" aria-hidden="true" /></div><div className="case-copy"><p>{t.stopIntro}</p><p>{t.stopDetail}</p><p className="case-conclusion">{t.stopConclusion}</p></div></div></section>
@@ -53,6 +54,6 @@ export function Portfolio({ language }: { language: Language }) {
         </div></div>
       </div></section>
     </main>
-    <footer id="escribir" className="section"><div className="wrap"><div className="footer-main reveal"><div><p className="eyebrow">{t.contact}</p><h2>{t.closing}</h2><p>{t.closingText}</p></div><div className="contact-links"><a className="contact-email" href={`mailto:${site.email}`}>{site.email}<Arrow /></a><div><a className="text-link" href={site.links.linkedin} rel="me">LinkedIn<Arrow /></a><a className="text-link" href={cv}>{t.cv}<Arrow /></a></div></div></div><div className="footer-note"><span>{t.footer}</span><span>{t.footerNote}</span><span>Madrid · ES / EN</span></div></div></footer>
+    <footer id="escribir" className="section"><div className="wrap"><div className="footer-main reveal"><div><p className="eyebrow">{t.contact}</p><h2>{t.closing}</h2><p>{t.closingText}</p></div><div className="contact-links"><a className="contact-email" href={`mailto:${site.email}`}>{site.email}<Arrow /></a><div><a className="text-link" href={site.links.linkedin} rel="me noopener noreferrer">LinkedIn<Arrow /></a><a className="text-link" href={cv}>{t.cv}<Arrow /></a></div></div></div><div className="footer-note"><span>{t.footer}</span><span>{t.footerNote}</span><span>Madrid · ES / EN</span></div></div></footer>
   </>;
 }
