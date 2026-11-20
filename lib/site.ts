@@ -1,43 +1,38 @@
-function siteOrigin(): string {
-  const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-  if (explicit) {
-    return explicit.replace(/\/$/, "");
-  }
-
-  const production = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
-  if (production) {
-    return production.startsWith("http")
-      ? production.replace(/\/$/, "")
-      : `https://${production}`;
-  }
-
-  const deployment = process.env.VERCEL_URL?.trim();
-  if (deployment) {
-    return `https://${deployment.replace(/^https?:\/\//, "")}`;
-  }
-
-  return "https://jahyeon.vercel.app";
-}
-
 export const site = {
-  name: "Jose Antonio Hyeon",
+  name: "José Antonio Hyeon",
+  alternateNames: [
+    "Jose Antonio Hyeon",
+    "José A. Hyeon",
+    "Jose A. Hyeon",
+    "Jose A Hyeon",
+    "Jose Hyeon",
+  ],
   jobTitle: "Client Solutions Architect",
-  description:
-    "José Antonio Hyeon, Client Solutions Architect en NielsenIQ. Experiencia con clientes y datos, proyectos propios y decisiones de producto.",
-  descriptionEn:
-    "José Antonio Hyeon, Client Solutions Architect at NielsenIQ. Client and data experience, independent projects and product decisions.",
+  url: "https://joseahyeon.com",
   locale: "es_ES",
   email: "joseahyeon@gmail.com",
-  url: siteOrigin(),
   photo: "/jose-hyeon-retouched.jpg",
   photoWidth: 1000,
   photoHeight: 1000,
+  pages: {
+    es: {
+      path: "/",
+      title: "José Antonio Hyeon | Producto, soluciones y tecnología",
+      description:
+        "José Antonio Hyeon, Client Solutions Architect en NielsenIQ, en Madrid. Trayectoria y proyectos propios entre negocio, tecnología y producto digital.",
+    },
+    en: {
+      path: "/en",
+      title: "José Antonio Hyeon | Product, Solutions & Technology",
+      description:
+        "José Antonio Hyeon, Client Solutions Architect at NielsenIQ in Madrid. Independent projects connecting business, technology and digital products.",
+    },
+  },
   links: {
     migajas: "https://migajas.vercel.app",
     meantTo: "https://www.mnto.app",
-    fachada: "https://www.fachada.app",
+    fachada: "https://fachada.app",
     siQuiero: "https://siquiero.vercel.app",
     linkedin: "https://www.linkedin.com/in/joseahyeon/",
   },
 } as const;
-
