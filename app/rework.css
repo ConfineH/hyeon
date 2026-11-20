@@ -1,0 +1,159 @@
+.signal {
+  background: #fffdf8;
+  border-bottom: 1px solid rgba(25, 26, 23, 0.08);
+}
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 24px 36px;
+  align-items: start;
+  padding-block: 30px 34px;
+}
+
+.signal-label {
+  margin: 0;
+  padding-top: 12px;
+  color: #646b60;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.13em;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.signal ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.signal li {
+  min-width: 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(37, 41, 35, 0.16);
+}
+
+.signal-kicker,
+.signal-title,
+.signal li p:last-child {
+  margin: 0;
+}
+
+.signal-kicker {
+  color: #62675d;
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+}
+
+.signal-title {
+  margin-top: 7px;
+  color: #252923;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 450;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.signal li p:last-child {
+  margin-top: 8px;
+  color: #50594b;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.project-facts {
+  margin: 22px 0 0;
+}
+
+.project-facts div + div {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(37, 41, 35, 0.12);
+}
+
+.project-facts dt {
+  margin-bottom: 6px;
+  color: #646b60;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.project-facts dd {
+  margin: 0;
+  color: #50594b;
+  font-size: 0.93rem;
+  line-height: 1.75;
+}
+
+.project-status {
+  margin: 16px 0 0;
+  padding: 2px 0 2px 14px;
+  border-left: 2px solid #c6ad80;
+  color: #50594b;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.project-status span {
+  display: block;
+  margin-bottom: 4px;
+  color: #646b60;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.project-sage .project-facts div:last-child {
+  border-top-color: #8b987c;
+}
+
+.project-rose .project-facts div:last-child {
+  border-top-color: #c4a08e;
+}
+
+.project-slate .project-facts div:last-child {
+  border-top-color: #8ea0a6;
+}
+
+@media (max-width: 950px) {
+  .signal-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-block: 24px 28px;
+  }
+
+  .signal-label {
+    padding-top: 0;
+  }
+
+  .signal ul {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .signal ul {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .signal-title {
+    font-size: 1.25rem;
+  }
+
+  .project-facts dd,
+  .project-status {
+    font-size: 0.92rem;
+  }
+}

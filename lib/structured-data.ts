@@ -17,17 +17,17 @@ export function structuredData(language: Language) {
     {
       name: "Migajas",
       url: site.links.migajas,
-      description: `${t.migajasBuilt} ${t.migajasDetail}`,
+      description: `${t.migajasProblem} ${t.migajasBuilt} ${t.migajasDetail} ${t.migajasStatus}`,
     },
     {
       name: "Meant To",
       url: site.links.meantTo,
-      description: `${t.meantBuilt} ${t.meantDetail}`,
+      description: `${t.meantProblem} ${t.meantBuilt} ${t.meantDetail} ${t.meantStatus}`,
     },
     {
       name: "Fachada",
       url: site.links.fachada,
-      description: `${t.fachada} ${t.fachadaDetail}`,
+      description: `${t.fachadaProblem} ${t.fachada} ${t.fachadaDetail} ${t.fachadaStatus}`,
     },
   ].map((work) => ({
     "@type": "CreativeWork",

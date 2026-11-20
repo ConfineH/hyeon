@@ -3,6 +3,7 @@ import { Manrope, Newsreader } from "next/font/google";
 import type { Language } from "@/lib/copy";
 import { structuredData } from "@/lib/structured-data";
 import "@/app/globals.css";
+import "@/app/rework.css";
 
 const body = Manrope({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 const display = Newsreader({ subsets: ["latin"], variable: "--font-display", display: "swap" });

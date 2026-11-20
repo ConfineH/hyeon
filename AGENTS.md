@@ -22,3 +22,5 @@ Read PRODUCT.md, DESIGN.md and TONE.md. Content is in lib/copy.ts; URL/contact f
 
 ## Latest user direction
 Use the retouched navy-blazer portrait as explicitly requested. Editorial design with Newsreader and Manrope, richer bilingual narrative grounded in the Notion voice guide, confirmed story and master CV. Calm, once-only entrance animations with reduced-motion support. Current app captures remain pending user-supplied replacements. Do not publish private app data.
+
+November 2026 rework: credibility before the personal story. A short facts band, then projects with the problem, what was built, one decision and the current status visible. Sí Quiero stays. The notebook and AI-assisted building stay after the projects, and AI is not the professional identity. Headline unchanged. Do not merge or publish that rework without the owner's authorization.
