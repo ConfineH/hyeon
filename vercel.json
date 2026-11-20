@@ -1,6 +1,12 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "jahyeon\\.vercel\\.app" }],
+      "destination": "https://joseahyeon.com/",
+      "statusCode": 301
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "jahyeon\\.vercel\\.app" }],
       "destination": "https://joseahyeon.com/:path*",
