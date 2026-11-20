@@ -32,13 +32,13 @@ export function Portfolio({ language }: { language: Language }) {
       </section>
       <section className="signal" aria-labelledby="signal-title"><div className="wrap signal-grid reveal">
         <p id="signal-title" className="signal-label">{t.signalLabel}</p>
-        <ul>{t.signal.map((item) => <li key={item.title}><p className="signal-kicker">{item.kicker}</p><p className="signal-title">{item.title}</p><p>{item.text}</p></li>)}</ul>
+        <ul>{t.signal.map((item) => <li key={item.title}><p className="signal-kicker">{item.kicker}</p><p className="signal-title">{item.title}</p><p className="signal-when">{item.text}</p></li>)}</ul>
       </div></section>
       <section id="proyectos" className="projects-section section" aria-labelledby="projects-title"><div className="wrap">
         <div className="section-heading reveal"><SectionLabel number="01">{t.projects}</SectionLabel><h2 id="projects-title">{t.selected}</h2><p>{t.selectedIntro}</p></div>
         {projects.map((project, index) => <article className={`project project-${project.theme} reveal`} key={project.name}>
           <figure className="project-visual"><a href={project.url} className="project-image-link" aria-label={`${t.visit} ${project.name}`} rel="noopener noreferrer"><div className="visual-heading"><span>{project.name}</span><span aria-hidden="true">0{index + 1} / 03</span></div><div className="image-mat"><Image src={project.image} alt={project.alt} width={project.width} height={project.height} sizes="(max-width: 700px) calc(100vw - 80px), 500px" className="project-image" /></div></a><figcaption>{project.caption}</figcaption></figure>
-          <div className="project-copy"><p className="eyebrow">{project.category}</p><h3>{project.headline}</h3><dl className="project-facts"><div><dt>{t.problemLabel}</dt><dd>{project.problem}</dd></div><div><dt>{t.builtLabel}</dt><dd>{project.body}</dd></div><div><dt>{project.decision}</dt><dd>{project.detail}</dd></div></dl><p className="project-status"><span>{t.statusLabel}</span>{project.status}</p><a className="text-link" href={project.url} rel="noopener noreferrer">{t.visit} {project.name}<Arrow /></a></div>
+          <div className="project-copy"><p className="eyebrow">{project.category}</p><h3>{project.headline}</h3><p className="project-lead">{project.problem}</p><aside className="project-decision"><p className="project-decision-title">{project.decision}</p><p>{project.detail}</p></aside><p className="project-body">{project.body}</p><p className="project-status">{project.status}</p><a className="text-link" href={project.url} rel="noopener noreferrer">{t.visit} {project.name}<Arrow /></a></div>
         </article>)}
       </div></section>
       <section className="case-section section" aria-labelledby="case-title"><div className="wrap case-grid reveal"><div><SectionLabel number="02">{t.stopLabel}</SectionLabel><h2 id="case-title">{t.stopTitle}</h2><div className="case-rule" aria-hidden="true" /></div><div className="case-copy"><p>{t.stopIntro}</p><p>{t.stopDetail}</p><p className="case-conclusion">{t.stopConclusion}</p></div></div></section>
