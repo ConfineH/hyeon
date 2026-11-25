@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#120f0c"/><path d="M19 16v32m26-32v32M19 32h26" fill="none" stroke="#c4a574" stroke-width="6"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img">
+<!-- Outlined Newsreader italic H. Flat #E4BD75 on #100E09. No shadow or external font. -->
+<title>José Antonio Hyeon</title>
+<rect width="64" height="64" rx="14.32" fill="#100E09"/>
+<path fill="#E4BD75" d="M19.55 33.04 20.41 30.23H44.61L43.75 33.04ZM21.8 16.46 18.32 15.18 18.64 14.08H32.79L32.47 15.18L28.3 16.57L18.85 47.54L22.33 48.82L21.98 49.92H7.86L8.18 48.82L12.35 47.43ZM45.12 16.46 41.67 15.18 41.99 14.08H56.14L55.79 15.18L51.62 16.57L42.2 47.54L45.68 48.82L45.33 49.92H31.18L31.53 48.82L35.7 47.43Z"/>
+</svg>

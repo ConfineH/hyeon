@@ -46,6 +46,7 @@ export function structuredData(language: Language) {
         "@id": websiteId,
         url: site.url,
         name: site.name,
+        alternateName: ["José A. Hyeon", "joseahyeon.com"],
         inLanguage: ["es", "en"],
         publisher: { "@id": personId },
       },
