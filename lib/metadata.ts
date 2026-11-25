@@ -13,6 +13,7 @@ export function pageMetadata(language: Language): Metadata {
 
   return {
     metadataBase: new URL(site.url),
+    applicationName: site.name,
     title: page.title,
     description: page.description,
     authors: [{ name: site.name, url: site.url }],
@@ -28,7 +29,14 @@ export function pageMetadata(language: Language): Metadata {
         "max-video-preview": -1,
       },
     },
-    icons: { icon: "/favicon.svg" },
+    icons: {
+      icon: [
+        { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+        { url: "/favicon.svg", type: "image/svg+xml" },
+        { url: "/favicon.ico", sizes: "any" },
+      ],
+      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    },
     alternates: {
       canonical,
       languages: {

@@ -19,13 +19,13 @@ export const site = {
       path: "/",
       title: "José Antonio Hyeon | Producto, soluciones y tecnología",
       description:
-        "José Antonio Hyeon, Client Solutions Architect en NielsenIQ, en Madrid. Trayectoria y proyectos propios entre negocio, tecnología y producto digital.",
+        "José Antonio Hyeon, Client Solutions Architect en NielsenIQ, en Madrid. Trayectoria en auditoría y producto, y proyectos propios: Migajas, Fachada y Meant To.",
     },
     en: {
       path: "/en",
       title: "José Antonio Hyeon | Product, Solutions & Technology",
       description:
-        "José Antonio Hyeon, Client Solutions Architect at NielsenIQ in Madrid. Independent projects connecting business, technology and digital products.",
+        "José Antonio Hyeon, Client Solutions Architect at NielsenIQ in Madrid. Previously in financial audit. Independent projects: Migajas, Fachada and Meant To.",
     },
   },
   links: {
